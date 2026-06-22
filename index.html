@@ -1,113 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio | Cleison dos Santos Oliveira</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <button id="btn-tema" class="btn-tema">🌙 Modo Escuro</button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        
-        <section id="sobre" class="secao">
-            <h1>Olá, sou Cleison dos Santos Oliveira</h1>
-            <h2>Desenvolvedor Full-Stack em Formação</h2>
+      <section id="sobre" class="secao">
+        <h1>Olá, sou Cleison dos Santos Oliveira</h1>
+        <h2>Desenvolvedor Full-Stack em Formação</h2>
+        <p>
+          Olá! Resido em Conceição do Lago-Açu, Maranhão, e sou um apaixonado
+          por tecnologia e desenvolvimento de sistemas. Atualmente, sou
+          acadêmico do curso de Análise e Desenvolvimento de Sistemas, com foco
+          em construir uma base sólida em programação web e engenharia
+          full-stack.
+        </p>
+
+        <p>
+          Tenho um forte interesse em criar soluções eficientes e funcionais,
+          explorando tecnologias que vão desde o front-end até linguagens
+          robustas como Java. Além de escrever código, adoro investigar e
+          aplicar ferramentas de Inteligência Artificial para otimizar
+          processos, aumentar a produtividade e organizar informações de forma
+          inteligente. Meu grande objetivo profissional a longo prazo é atuar
+          como Analista de TI, unindo a vocação para o serviço público com a
+          inovação tecnológica.
+        </p>
+
+        <p>
+          Quando não estou imerso em projetos de software ou focado na minha
+          rotina de preparação para concursos, gosto de manter a mente afiada me
+          desafiando em jogos competitivos online. E, para recarregar as
+          energias após um dia intenso de estudos, nada melhor do que acompanhar
+          bons animes.
+        </p>
+      </section>
+
+      <section id="formacao" class="secao">
+        <h2>Minha Formação</h2>
+        <div class="card-formacao">
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p>
+            <strong>Instituição:</strong> Centro Universitário Internacional
+            (UNINTER)
+          </p>
+          <p>
+            Graduação tecnológica em andamento. Foco em lógica de programação,
+            engenharia de software e estruturação de sistemas web e banco de
+            dados.
+          </p>
+        </div>
+        <div class="card-formacao">
+          <h3>Desenvolvimento Full-Stack & Java</h3>
+          <p>
+            Estudos contínuos em programação orientada a objetos com Java e
+            Python, criação de interfaces de usuário e estruturação de projetos
+            práticos.
+          </p>
+        </div>
+        <div class="card-formacao">
+          <h3>Idiomas</h3>
+          <p><strong>Português:</strong> Nativo</p>
+          <p>
+            <strong>Inglês:</strong> Básico (Focado em leitura técnica de
+            documentações e códigos)
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio" class="secao">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto-card">
+            <h3>Alfabetização Infantil com Mini-games</h3>
             <p>
-                Resido em Conceição do Lago-Açu, Maranhão, e sou um entusiasta da tecnologia e do desenvolvimento de sistemas. 
-                Tenho um forte interesse em criar soluções web eficientes e explorar o uso de Inteligência Artificial 
-                para otimizar processos e organizar informações. Fora dos códigos, estudo para concursos públicos e gosto de 
-                me desafiar em jogos competitivos online e gosto de ver animes para realaxar a mente.
+              Plataforma web desenvolvida com foco educacional. O sistema
+              auxilia na aprendizagem de sílabas infantis através de mini-games
+              interativos.
             </p>
-        </section>
 
-        <section id="formacao" class="secao">
-            <h2>Minha Formação</h2>
-            <div class="card-formacao">
-                <h3>Análise e Desenvolvimento de Sistemas</h3>
-                <p><strong>Instituição:</strong> Centro Universitário Internacional (UNINTER)</p>
-                <p>Graduação tecnológica em andamento. Foco em lógica de programação, engenharia de software e estruturação de sistemas web e banco de dados.</p>
+            <div class="botoes-projeto">
+              <a
+                href="https://alfabetizafamilia-teste.netlify.app/"
+                target="_blank"
+                class="btn-projeto"
+                >Ver Site</a
+              >
+
+              <a
+                href="https://github.com/cleisonoliveira118-wq/projeto-alfabetizacao-infantil"
+                target="_blank"
+                class="btn-projeto btn-secundario"
+                >Ver Código</a
+              >
             </div>
-            <div class="card-formacao">
-                <h3>Desenvolvimento Full-Stack & Java</h3>
-                <p>Estudos contínuos em programação orientada a objetos com Java e Python, criação de interfaces de usuário e estruturação de projetos práticos.</p>
+          </div>
+          <div class="projeto-card">
+            <h3>Calculadora Web</h3>
+            <p>
+              Uma calculadora responsiva e funcional desenvolvida com HTML, CSS
+              Grid e JavaScript puro. Focada em manipulação de DOM e lógica
+              matemática.
+            </p>
+
+            <div class="botoes-projeto">
+              <a
+                href="https://cleisonoliveira118-wq.github.io/calculadora-web/"
+                target="_blank"
+                class="btn-projeto"
+                >Ver Site</a
+              >
+              <a
+                href="https://github.com/cleisonoliveira118-wq/calculadora-web"
+                target="_blank"
+                class="btn-projeto btn-secundario"
+                >Ver Código</a
+              >
             </div>
-            <div class="card-formacao">
-                <h3>Idiomas</h3>
-                <p><strong>Português:</strong> Nativo</p>
-                <p><strong>Inglês:</strong> Básico (Focado em leitura técnica de documentações e códigos)</p>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="portfolio" class="secao">
-            <h2>Meus Projetos</h2>
-            <div class="projetos-grid">
-                
-                <div class="projeto-card">
-                    <h3>Alfabetização Infantil com Mini-games</h3>
-                    <p>Plataforma web desenvolvida com foco educacional. O sistema auxilia na aprendizagem de sílabas infantis através de mini-games interativos.</p>
-                    
-                    <div class="botoes-projeto">
-                        <a href="https://alfabetizafamilia-teste.netlify.app/" target="_blank" class="btn-projeto">Ver Site</a>
-                        
-                        <a href="https://github.com/cleisonoliveira118-wq/projeto-alfabetizacao-infantil" target="_blank" class="btn-projeto btn-secundario">Ver Código</a>
-                    </div>
-                </div>
-                <div class="projeto-card">
-                    <h3>Calculadora Web</h3>
-                    <p>Uma calculadora responsiva e funcional desenvolvida com HTML, CSS Grid e JavaScript puro. Focada em manipulação de DOM e lógica matemática.</p>
-    
-                    <div class="botoes-projeto">
-                        <a href="https://cleisonoliveira118-wq.github.io/calculadora-web/" target="_blank" class="btn-projeto">Ver Site</a>
-                        <a href="https://github.com/cleisonoliveira118-wq/calculadora-web" target="_blank" class="btn-projeto btn-secundario">Ver Código</a>
-                    </div>
-                </div>
+      <section id="contato" class="secao">
+        <h2>Entre em Contato</h2>
+        <p>
+          Tem alguma proposta ou quer trocar uma ideia sobre tecnologia? Me
+          mande uma mensagem!
+        </p>
 
+        <form id="form-contato">
+          <div class="campo">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" />
+          </div>
 
-            </div>
-        </section>
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="exemplo@dominio.com" />
+          </div>
 
-        <section id="contato" class="secao">
-            <h2>Entre em Contato</h2>
-            <p>Tem alguma proposta ou quer trocar uma ideia sobre tecnologia? Me mande uma mensagem!</p>
-            
-            <form id="form-contato">
-                <div class="campo">
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
-                </div>
-                
-                <div class="campo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="exemplo@dominio.com">
-                </div>
-                
-                <div class="campo">
-                    <label for="mensagem">Sua mensagem:</label>
-                    <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
-                </div>
+          <div class="campo">
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea
+              id="mensagem"
+              rows="5"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+          </div>
 
-                <button type="submit" id="btn-enviar">Enviar Mensagem</button>
-            </form>
-        </section>
-
+          <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Desenvolvido por Cleison dos Santos Oliveira. Projeto Acadêmico.</p>
+      <p>
+        &copy; 2026 - Desenvolvido por Cleison dos Santos Oliveira. Projeto
+        Acadêmico.
+      </p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

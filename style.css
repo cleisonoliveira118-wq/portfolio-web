@@ -1,12 +1,77 @@
 
 
-/* VARIÁVEIS DE CORES (troca do tema) */
+/* VARIÁVEIS DE CORES */
 :root {
     --cor-fundo: #f4f4f9;
     --cor-texto: #333;
     --cor-primaria: #0a192f;
     --cor-secundaria: #ffffff;
     --cor-destaque: #64ffda; 
+}
+/* TEMA ESCURO (Aplicado via JavaScript) */
+.tema-escuro {
+    --cor-fundo: #0b1120; /* Fundo bem escuro */
+    --cor-texto: #e2e8f0; /* Texto claro */
+    --cor-primaria: #1e293b; /* Fundo dos cards e botões no tema escuro */
+    --cor-secundaria: #0f172a; /* Destaques secundários */
+    --cor-destaque: #64ffda; /* Mantém o verde */
+}
+
+/* ESTILO DO BOTÃO DE TEMA NO MENU */
+.btn-tema {
+    background: transparent;
+    border: 1px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-tema:hover {
+    background: var(--cor-destaque);
+    color: var(--cor-primaria);
+}
+
+/* --- CORREÇÕES DE CONTRASTE DO MODO ESCURO --- */
+
+/* 1. Títulos e labels na cor verde-água brilhante */
+.tema-escuro h1,
+.tema-escuro h2,
+.tema-escuro .campo label {
+    color: var(--cor-destaque);
+}
+
+/* 2. Garante que os links do menu lá no topo fiquem brancos e visíveis */
+.tema-escuro .menu a {
+    color: #e2e8f0; 
+}
+.tema-escuro .menu a:hover {
+    color: var(--cor-destaque);
+}
+
+/* 3. Botões principais ganham fundo verde-água e texto escuro (alto contraste) */
+.tema-escuro .btn-projeto,
+.tema-escuro button[type="submit"] {
+    background-color: var(--cor-destaque);
+    color: #0b1120; 
+}
+.tema-escuro .btn-projeto:hover,
+.tema-escuro button[type="submit"]:hover {
+    background-color: #e2e8f0; 
+}
+
+/* 4. O botão de "Ver Código" (secundário) acompanha o verde-água */
+.tema-escuro .btn-secundario {
+    background-color: transparent;
+    color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+.tema-escuro .btn-secundario:hover {
+    background-color: var(--cor-destaque);
+    color: #0b1120;
 }
 
 /* RESET BÁSICO */

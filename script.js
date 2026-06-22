@@ -42,3 +42,22 @@ formContato.addEventListener('submit', function(event) {
     // Limpar todos os campos do formulário, deixando-o pronto para um novo uso
     formContato.reset();
 });
+
+// LÓGICA DO TEMA CLARO/ESCURO 
+
+// 1. Seleciona o botão de tema pelo ID
+const btnTema = document.getElementById('btn-tema');
+
+// 2. Adiciona o evento de clique ao botão
+btnTema.addEventListener('click', function() {
+    
+    // O 'toggle' liga a classe se ela não existir, e desliga se ela existir
+    document.body.classList.toggle('tema-escuro');
+    
+    // Verifica se a classe 'tema-escuro' está ativada no body para mudar o ícone do botão
+    if (document.body.classList.contains('tema-escuro')) {
+        btnTema.textContent = '☀️ Modo Claro';
+    } else {
+        btnTema.textContent = '🌙 Modo Escuro';
+    }
+});
